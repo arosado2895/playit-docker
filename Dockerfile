@@ -7,7 +7,7 @@ RUN useradd -d /home/container -s /bin/bash container
 #Set the working directory
 WORKDIR /home/container
 #Download and set permissions for playit
-RUN wget -O playit https://new.playit.gg/downloads/playit-0.9.3
+RUN wget -O playit https://github.com/playit-cloud/playit-agent/releases/download/v0.9.3/playit-0.9.3
 RUN chmod u+x playit
 #Set user
 USER container
